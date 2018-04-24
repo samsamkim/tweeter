@@ -15,11 +15,56 @@ html {
  */
 
 body {
-  margin: 0;
-  color: #244751;
   background-color: #eee;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main.container {
+  width: 450px;
+  height: 450px;
+
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -225px;
+
+}
+
+main.container .new-tweet {
+  border-style: groove;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0.5em 0.5em 1em 0.5em;
+  margin: 2em;
+  background-color: #eee;
+
+}
+
+/*It should be only 450px wide
+It should be center aligned to the body
+It should have a white background so that users can clearly separate the content space from the "gutter" or "curtains" of the page
+Tip: Add some temporary content like paragraphs or headings into main to see how it flows and that it aligns well vertically.
+*/
+
+main.container .new-tweet h2 {
+  margin: 0;
+  border-bottom: solid blue 1px;
+  margin-bottom: 1em;
+}
+
+main.container .new-tweet textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0.2em;
+}
+
+main.container .new-tweet form .counter{
+  float: right;
+  padding: 0 0.3em 0 0;
+}
