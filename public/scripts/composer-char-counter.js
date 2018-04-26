@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
 
-  $('#inputText').on('keydown', function() {
+  $('#inputText').on('input', function() {
     let tweetLength = 140 - $(this).val().length;
 
 
@@ -12,7 +12,6 @@ $(document).ready(function() {
     }else{
       $(this).siblings('span.counter').text(tweetLength).css('color', 'black');
     }
-
   });
 
 

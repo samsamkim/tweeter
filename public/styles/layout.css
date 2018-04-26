@@ -27,7 +27,7 @@ body {
 
 main.container {
   width: 450px;
-  height: 450px;
+  overflow: auto;
 
   background-color: #FFFFFF;
   position: absolute;
@@ -72,11 +72,13 @@ main.container .new-tweet form .counter{
 
 
 #tweetContainer article{
-  border-style: groove;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a2bcab;
   border-radius: 10px;
   text-align: left;
   margin: 2em;
-  background-color: #eee;
+  background-color: #FFFFFF;
 
   height: 200px;
   position: relative;
@@ -104,6 +106,7 @@ main.container .new-tweet form .counter{
   top: 0;
   padding: 0.4em
 }
+
 #tweetContainer article header span.side{
   position: absolute;
   right: 0;
@@ -114,13 +117,10 @@ main.container .new-tweet form .counter{
   font-size: 0.95em;
 }
 
-
-
-
 /* div */
 
 #tweetContainer article div{
-  background-color: #eee;
+  background-color: #FFFFFF;
   padding: 0.8em;
   font-size: 1.2em;
   height: 95px;
@@ -130,12 +130,28 @@ main.container .new-tweet form .counter{
 
 
 /* footer */
-
 #tweetContainer article footer{
 
   padding: 1em 0.5em 0em 0.5em;
   font-size: 0.8em;
-  background-color: #eee;
+  background-color: #FFFFFF;
   color: #616661;
   border-top: solid #dae5dd 1px;
 }
+
+#tweetContainer article footer i.fas{
+  float: right;
+  color: white;
+  padding: 0 0 0 0.5em;
+}
+
+
+/* hover elements */
+
+#tweetContainer article:hover {
+  border-color: #3a3c3f;
+  }
+#tweetContainer article:hover footer i{
+  color: #55d6e8;
+  }
+

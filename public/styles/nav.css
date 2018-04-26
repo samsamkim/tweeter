@@ -18,3 +18,18 @@ span.header {
   font-size: 200%;
   line-height: 2.5em
 }
+
+#nav-bar input.composeButton {
+  border-radius: 0.5em;
+  color: #00a087;
+  font-size: 1.3em;
+  background: #ffffff;
+  padding: 1em 0.3em 1em 0.3em;
+  border: solid #000000 0.04em;
+  float: right;
+  margin: 0.23em;
+}
+
+#nav-bar input.composeButton:hover {
+  color: black;
+}
