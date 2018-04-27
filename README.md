@@ -2,6 +2,11 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
+!["Making a new tweet with the new tweet box"](https://github.com/samsamkim/tweeter/blob/master/docs/tweeterScreenshot1.png?raw=true)
+
+!["View tweets"](https://github.com/samsamkim/tweeter/blob/master/docs/tweeterScreenshot2.png?raw=true)
+
+
 
 ## Getting Started
 
