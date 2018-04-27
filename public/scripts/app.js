@@ -60,42 +60,46 @@
     $.ajax({
           url: '/tweets',
           method: 'GET',
-          success: renderTweets
+          success: function(result){
+            //display those tweets here.
+              renderTweets(result);
+            },
+          error: function(err){
+            console.log("there was an error ",err);
+          }
         });
   };
 
 $(document).ready(function() {
-loadTweets();
+  loadTweets();
 
 //clicking tweet button sends tweet to loadTweet function
-  $(".tweetButton").click(function( event ) {
-      event.preventDefault();
-      var tweet = $('#inputText').serialize();
+//   $(".tweetButton").click(function( event ) {
+//       event.preventDefault();
+//       var tweet = $('#inputText').serialize();
 
-      if(($(".counter").html()) < 0){
-        alert("tweet is not 140 character!");
-      }else if(($(".counter").html()) == 140){
-        alert("You didn't enter a tweet!");
-      }
-      else{
-          $.ajax({
-              url: '/tweets',
-              method: 'POST',
-              data: $('#inputText').serialize(),
-              success: loadTweets
-        });
-      }
-    });
-
-
-//button slides up and down and focuses on textarea by default
-  $(".composeButton").click(function() {
-    $(".new-tweet").slideToggle(200, function(){
-      $("#inputText").focus();
-    });
-  });
+//       if(($(".counter").html()) < 0){
+//         alert("tweet is not 140 character!");
+//       }else if(($(".counter").html()) == 140){
+//         alert("You didn't enter a tweet!");
+//       }
+//       else{
+//           $.ajax({
+//               url: '/tweets',
+//               method: 'POST',
+//               data: $('#inputText').serialize(),
+//               success: loadTweets
+//         });
+//       }
+//     });
 
 
+// //button slides up and down and focuses on textarea by default
+//   $(".composeButton").click(function() {
+//     $(".new-tweet").slideToggle(200, function(){
+//       $("#inputText").focus();
+//     });
+//   });
 
 });
 
