@@ -25,13 +25,14 @@
     <!-- Flexbox -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
-
+    <!-- Character counter JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- include jquery -->
@@ -43,11 +44,14 @@
 
   <body>
 
-    <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
-      <input class=composeButton type="button" value="Compose"></input>
+      <button class="composeButton" type="submit">
+        <i class="fas fa-edit"></i>
+        Compose
+      </button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -56,38 +60,14 @@
         <h2>Compose Tweet</h2>
         <form action="tweets" method="post">
           <textarea id="inputText" name="text" placeholder="What are you humming about?"></textarea>
-          <input class=tweetButton type="submit" value="Tweet">
+          <input class="tweetButton" type="submit" value="Tweet">
           </input>
-
           <span class="counter">140</span>
-
-
-
         </form>
+
       </section>
       <section id='tweetContainer'>
-
       </section>
     </main>
-
   </body>
-
-
-<!-- <script type="text/javascript">
-
-  $.ajax({
-      url: '/',
-      type: 'post',
-      dataType: 'json',
-      success: function (data) {
-          $('form').serialize(data);
-      },
-      data: person
-    });
-
-</script>
- -->
-
-
-
 </html>

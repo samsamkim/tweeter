@@ -1,4 +1,4 @@
-
+/*Navigation bar at the top*/
 #nav-bar {
   margin-top: 0px;
   background-color: #00a087;
@@ -7,6 +7,7 @@
   padding: 0em 2em 0em 2em
 }
 
+/*Logo at the left*/
 #nav-bar .logo {
   margin-right: 10px;
   float: left;
@@ -19,17 +20,19 @@ span.header {
   line-height: 2.5em
 }
 
-#nav-bar input.composeButton {
+/*Button at the right*/
+#nav-bar button.composeButton {
   border-radius: 0.5em;
   color: #00a087;
   font-size: 1.3em;
-  background: #ffffff;
+  background: #d4f7f0;
   padding: 1em 0.3em 1em 0.3em;
   border: solid #000000 0.04em;
   float: right;
   margin: 0.23em;
 }
 
-#nav-bar input.composeButton:hover {
+#nav-bar button.composeButton:hover {
   color: black;
+  background-color: white;
 }
