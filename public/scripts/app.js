@@ -78,6 +78,7 @@ $(document).ready(function() {
               success: loadTweets
               });
           $("#inputText").val("");
+          $("span.counter").text(140);
         }
       });
 
